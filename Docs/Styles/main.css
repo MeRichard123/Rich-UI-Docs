@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.transition-fade {
+  opacity: 1;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+  opacity: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+nav {
+  background: #05c46b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 80rem;
+          flex: 1 1 80rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .logo {
+  height: 5vh;
+  margin: 0 1.5rem;
+}
+
+nav a {
+  color: #eee;
+  text-decoration: none;
+}
+
+nav .nav-items {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav .nav-item {
+  -webkit-transition: opacity 100ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
+  padding: 0 1.5rem;
+  opacity: 0.8;
+}
+
+nav .nav-item:hover {
+  opacity: 1;
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
+}
+
+nav .github {
+  -webkit-transition: opacity 100ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
+  padding: 0 1.5rem;
+  opacity: 0.4;
+}
+
+nav .github:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    position: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .nav-items {
+    padding: 0;
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav .nav-item {
+    padding: 0 4px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

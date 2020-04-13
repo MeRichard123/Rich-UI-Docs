@@ -1,0 +1,61 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+nav {
+  background: #05c46b;
+  display: flex;
+  flex: 1 1 80rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    height: 5vh;
+    margin: 0 1.5rem;
+  }
+  a {
+    color: #eee;
+    text-decoration: none;
+  }
+  .nav-items {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nav-item {
+    transition: opacity 100ms ease-in-out;
+    padding: 0 1.5rem;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+      filter: brightness(200%);
+    }
+  }
+  .github {
+    transition: opacity 100ms ease-in-out;
+    padding: 0 1.5rem;
+    opacity: 0.4;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    position: initial;
+    flex-direction: column;
+    .nav-items {
+      padding: 0;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-item {
+      padding: 0 4px;
+    }
+  }
+}
