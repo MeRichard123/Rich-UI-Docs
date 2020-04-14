@@ -7,26 +7,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.transition-fade {
-  opacity: 1;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-html.is-animating .transition-fade {
-  opacity: 0;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-}
-
-html.is-leaving .transition-fade {
-  opacity: 0;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
 nav {
   position: fixed;
   top: 0;
@@ -106,6 +86,7 @@ nav .github:hover {
   nav .nav-items {
     padding: 0;
     margin: 0;
+    font-size: 14px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -115,6 +96,100 @@ nav .github:hover {
   }
   nav .nav-item {
     padding: 0 4px;
+  }
+}
+
+footer {
+  background: #f0f0f0;
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer p {
+  padding: 2.5rem;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: underline;
+  color: purple;
+}
+
+.sidebar {
+  border-right: 2px solid #515151;
+}
+
+main {
+  padding-top: 80px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.code {
+  padding-top: 1rem;
+  background: #eeeeee;
+  border-radius: 10px;
+  position: relative;
+  margin: 30px 0;
+}
+
+.code .text {
+  outline: none;
+  border: 0;
+}
+
+.code-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: 50%;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 170px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .code-btn {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

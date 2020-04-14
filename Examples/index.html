@@ -81,6 +81,10 @@
     />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="./Styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/uimini/dist/css/uimini.min.css"
+    />
   </head>
   <body>
     <nav>
@@ -91,7 +95,7 @@
         <li><a href="/index.html" class="nav-item">Home</a></li>
         <li><a href="../Docs/" class="nav-item">Documentation</a></li>
         <li><a href="./index.html" class="nav-item">Examples</a></li>
-        <li><a href="../Release/" class="nav-item">Release</a></li>
+        <li><a href="../Release/" class="nav-item">Changelog</a></li>
       </ul>
       <a href="https://github.com/MeRichard123/Rich-UI"
         ><img
@@ -100,5 +104,49 @@
           class="github"
       /></a>
     </nav>
+    <main>
+      <h1 class="ui-title-2">Have you used Rich UI in your Projects?</h1>
+      <p class="ui-text-regular">
+        Feel free to send us a message and we can showcase your project on this
+        page.
+      </p>
+      <form action="https://formspree.io/mwknagjo" method="POST">
+        <label for="Name">Name:</label>
+        <input type="text" name="Name" id="" />
+        <label for="email">E-Mail:</label>
+        <input type="email" name="_replyto" required />
+        <label for="message">Message:</label>
+        <textarea name="message" id="" cols="50" rows="60"></textarea>
+        <input type="submit" value="Send" class="button" />
+      </form>
+      <h1 class="ui-title-2">Examples</h1>
+      <section class="card-section">
+        <div class="card">
+          <div class="image">
+            <img src="" alt="project Picture" />
+          </div>
+          <h3 class="ui-title-4">Name</h3>
+          <p class="ui-text-regular">
+            project description. Lorem ipum dolor sit amet
+          </p>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="" alt="project Picture" />
+          </div>
+          <h3 class="ui-title-4">Name</h3>
+          <p class="ui-text-regular">
+            project description. Lorem ipum dolor sit amet
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Designed and Built with ❤ by
+        <a href="https://richardcoric.netlify.com">RichardMe123</a>
+      </p>
+    </footer>
+    <script src="../node_modules/uimini/dist/js/uimini.min.js"></script>
   </body>
 </html>

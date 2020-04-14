@@ -81,6 +81,10 @@
     />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="./Styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/uimini/dist/css/uimini.min.css"
+    />
   </head>
   <body>
     <nav>
@@ -91,7 +95,7 @@
         <li><a href="/index.html" class="nav-item">Home</a></li>
         <li><a href="./index.html" class="nav-item">Documentation</a></li>
         <li><a href="../Examples/" class="nav-item">Examples</a></li>
-        <li><a href="../Release/" class="nav-item">Release</a></li>
+        <li><a href="../Release/" class="nav-item">Changelog</a></li>
       </ul>
       <a href="https://github.com/MeRichard123/Rich-UI"
         ><img
@@ -100,5 +104,106 @@
           class="github"
       /></a>
     </nav>
+    <!-- Open & Close button for mobile-->
+    <div class="sidebar-open-button">
+      <div class="button-burger">
+        <span class="line line-1"></span><span class="line line-2"></span
+        ><span class="line line-3"></span>
+      </div>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="container">
+        <div class="sidebar-content">
+          <ul class="sidebar-list">
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="index.html">Getting Started</a>
+            </li>
+            <p class="ui-text-small" style="margin: 16px 0 6px 0;">
+              Components
+            </p>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./buttons.html">Buttons</a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./cards.html">Cards</a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./navigation.html">Navigation</a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./forms.html">Forms</a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./images.html">Images</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main class="content-wrapper content-wrapper--sidebar">
+      <h1 class="ui-title-1">Introduction</h1>
+      <p class="ui-text-regular">
+        Get started with Rich UI. To speed up your front-end development.
+      </p>
+      <h1 class="ui-title-2">Quick Start</h1>
+      <p class="ui-text-regular">
+        If you would like to quickly add Rich UI to your project. Head over to
+        the GitHub and grab the build folder. Then Copy the Style and Script
+        links bellow.
+      </p>
+      <div class="code">
+        <div class="tooltip">
+          <button onclick="copy()" class="code-btn">
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            <img src="../assets/icons/iconmonstr-copy-2.svg" alt="" />
+          </button>
+        </div>
+        <input
+          class="text"
+          type="text"
+          readonly
+          value="&lt;link rel=”stylesheet” src=”build/rich.min.css” /&gt;"
+        />
+      </div>
+      <p class="ui-text-regular">
+        Some of our Components require JQuery read up on the individual
+        componets to see if its necessary.
+      </p>
+      <div class="code">
+        <input
+          class="text"
+          type="text"
+          readonly
+          value="&lt;script src=”build/rich.min.js” /&gt;"
+        />
+        <input
+          class="text"
+          type="text"
+          readonly
+          value="&lt;script src=”https://code.jquery.com/jquery-3.4.1.slim.min.js” /&gt;"
+        />
+      </div>
+      <h1 class="ui-title-2">Download</h1>
+      <p class="ui-text-regular">
+        You can also clone from Github and use the build folder
+      </p>
+      <div class="code">
+        <input
+          class="text"
+          type="text"
+          readonly
+          value="git clone https://github.com/MeRichard123/Rich-UI.git"
+        />
+      </div>
+    </main>
+    <footer>
+      <p>
+        Designed and Built with ❤ by
+        <a href="https://richardcoric.netlify.com">RichardMe123</a>
+      </p>
+    </footer>
+    <script src="../node_modules/uimini/dist/js/uimini.min.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>

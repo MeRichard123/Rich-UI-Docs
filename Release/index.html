@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rich UI | Release</title>
+    <title>Rich UI | Changelog</title>
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -81,6 +81,10 @@
     />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="./Styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/uimini/dist/css/uimini.min.css"
+    />
   </head>
   <body>
     <nav>
@@ -91,7 +95,7 @@
         <li><a href="/index.html" class="nav-item">Home</a></li>
         <li><a href="../Docs/" class="nav-item">Documentation</a></li>
         <li><a href="../Examples/" class="nav-item">Examples</a></li>
-        <li><a href="./index.html" class="nav-item">Release</a></li>
+        <li><a href="./index.html" class="nav-item">Changelog</a></li>
       </ul>
       <a href="https://github.com/MeRichard123/Rich-UI"
         ><img
@@ -100,5 +104,29 @@
           class="github"
       /></a>
     </nav>
+    <main>
+      <section id="timeline" class="timeline-outer">
+        <h1 class="ui-title-1">
+          Rich UI Changelog
+        </h1>
+        <ul class="timeline">
+          <li class="event" data-date="14/04/2020">
+            <h3>Initial Release - Version 1.0</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              nisi voluptatem exercitationem consequatur,
+            </p>
+          </li>
+          <li class="event" data-date="14/04/2020">
+            <h3>Title of Change - version</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              nisi voluptatem exercitationem consequatur,
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
+  <script src="../node_modules/uimini/dist/js/uimini.min.js"></script>
 </html>
