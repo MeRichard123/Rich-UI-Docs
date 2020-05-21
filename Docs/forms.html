@@ -125,9 +125,9 @@
             <li class="sidebar-item">
               <a class="sidebar-link" href="./cards.html">Cards</a>
             </li>
-            <li class="sidebar-item">
+            <!-- <li class="sidebar-item">
               <a class="sidebar-link" href="./navigation.html">Navigation</a>
-            </li>
+            </li> -->
             <li class="sidebar-item">
               <a class="sidebar-link" href="./forms.html">Forms</a>
             </li>
@@ -139,11 +139,104 @@
       </div>
     </div>
     <main class="content-wrapper content-wrapper--sidebar">
-      <h1>Forms</h1>
-      <h1>Forms</h1>
-      <h1>Forms</h1>
-      <h1>Forms</h1>
-      <h1>Forms</h1>
+      <h1 class="ui-title-1">Forms</h1>
+      <div class="ui-text-regular">
+        Beautifully designed to spice up your site. Need a way to submit your
+        form for free? Check out <a href="https://formspree.io/">Form Spree</a>
+      </div>
+      <div class="ui-title-3">Modern</div>
+      <div class="flex-container">
+        <form action="" method="POST" class="form-modern">
+          <input
+            type="text"
+            placeholder="Name:"
+            class="field"
+            id="name"
+            title="Name"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email:"
+            title="Email"
+            class="field"
+            required
+          />
+          <textarea
+            id=""
+            title="Message"
+            cols="30"
+            rows="10"
+            placeholder="Message:"
+            aria-placeholder="message text"
+            class="field__message"
+          ></textarea>
+          <input type="submit" value="Submit" class="submit-btn" />
+        </form>
+      </div>
+      <div class="ui-title-3">Example</div>
+      <div class="code">
+        <xmp class="text">
+          <form action="" method="POST" class="form-modern">
+                <input type="text" placeholder="Name:" class="field" title="Name" required/>
+                <input type="email" placeholder="Email:" title="Email" class="field" required/>
+                <textarea title="Message" cols="30" rows="10" placeholder="Message:" class="field__message"></textarea>
+                <input type="submit" value="Submit" class="submit-btn" />
+          </form>
+        </xmp>
+      </div>
+      <div class="ui-text-regular">
+        Need to center the form on the page like above? Don't worry we've got
+        you covered. Just add a class to the container.
+      </div>
+      <div class="code">
+        <xmp class="text">
+          <div class="flex-container ">
+                <!-- Content in here -->
+          </div>
+        </xmp>
+      </div>
+      <div class="ui-title-3">Simple</div>
+      <div class="flex-container">
+        <form action="" class="form-simple">
+          <label for="Name">Name:</label>
+          <input type="text" name="Name" id="" />
+          <label for="email">E-Mail:</label>
+          <input type="email" name="_replyto" required />
+          <label for="message">Message:</label>
+          <textarea name="message" id="" cols="50" rows="10"></textarea>
+          <input type="submit" value="Send" class="button" />
+        </form>
+      </div>
+      <div class="ui-title-3">Example</div>
+      <div class="code">
+        <xmp class="text">
+          <form action="" class="form-simple">
+                <label for="Name">Name:</label>
+                <input type="text" name="Name" id="" />
+                <label for="email">E-Mail:</label>
+                <input type="email" name="_replyto" required />
+                <label for="message">Message:</label>
+                <textarea name="message" id="" cols="50" rows="10"></textarea>
+                <input type="submit" value="Send" class="button" />
+          </form>
+        </xmp>
+      </div>
+      <div class="ui-title-3">Subscription</div>
+      <img
+        src="../assets/img/Screenshot_2020-05-21 Document.png"
+        class="image"
+        alt=""
+      />
+      <div class="ui-title-3">Example</div>
+      <div class="code">
+        <xmp class="text">
+          <form action="" class="subscribe">
+              <input type="text" placeholder="Email" class="email" />
+              <input type="submit" value="Subscribe" class="button" />
+          </form>
+        </xmp>
+      </div>
     </main>
     <footer>
       <p>

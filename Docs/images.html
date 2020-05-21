@@ -125,9 +125,9 @@
             <li class="sidebar-item">
               <a class="sidebar-link" href="./cards.html">Cards</a>
             </li>
-            <li class="sidebar-item">
+            <!-- <li class="sidebar-item">
               <a class="sidebar-link" href="./navigation.html">Navigation</a>
-            </li>
+            </li> -->
             <li class="sidebar-item">
               <a class="sidebar-link" href="./forms.html">Forms</a>
             </li>
@@ -139,12 +139,50 @@
       </div>
     </div>
     <main class="content-wrapper content-wrapper--sidebar">
-      <h1>Images</h1>
-      <h1>Images</h1>
-      <h1>Images</h1>
-      <h1>Images</h1>
-      <h1>Images</h1>
-      <h1>Images</h1>
+      <h1 class="ui-title-1">Responsive Images</h1>
+      <div class="ui-text-regular">
+        Need an image that scales with the page and can be centered?
+      </div>
+      <img
+        src="../assets/img/analog-camera-antique-cameras-close-up-318391.jpg"
+        alt="Image"
+        class="image"
+      />
+      <p class="ui-text-regular about-photo">
+        Photo by Adrianna Calvo from Pexels
+      </p>
+      <h1 class="ui-title-3">Example</h1>
+      <div class="ui-text-regular">
+        Simply add a class of "image" and your image will scale automatically
+      </div>
+      <div class="code">
+        <xmp class="text">
+          <img
+          src="../assets/img/cameras.jpg"
+          alt="cameras close up"
+          class="image"
+        />
+        </xmp>
+      </div>
+      <div class="ui-text-regular">
+        We use the CSS calc() function to scale the image. If you don't wish for
+        the image to be centered, copy the below into your own css and add your
+        own class name. Then play around with the margins or remove then to
+        place you image anywhere.
+      </div>
+      <div class="code">
+        <xmp class="text"
+>
+          .your-className{
+                width: 60%;
+                min-width: calc(1vw + 300px);
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+          }
+        </xmp>
+      </div>
     </main>
     <footer>
       <p>
