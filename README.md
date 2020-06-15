@@ -15,8 +15,8 @@ Features
 
 1. Intro Page about the framework
 2. A Documentation page 
-  - Showing how to download and use
-  - Showcasing the components *currently* available 
+      - Showing how to download and use
+      - Showcasing the components *currently* available 
 3. An examples page to submit what users have built with the framework
 4. A timeline to show the changes 
 5. Mobile Friendly 
